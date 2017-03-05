@@ -14,8 +14,8 @@ html,body{
 .header .warp .sp-preview{
 	margin: 0 !important;
 	border: 0 !important;
-	width: 17px;
-    height: 16px;
+    width: 16px;
+    height: 14px;
 }
 .header .warp .sp-dd{
 	display: none;
@@ -60,15 +60,15 @@ html,body{
 	margin-right: 5px;
 }
 .header .warp input{
-    height: 20px;
+    height: 18px;
     margin-right: 10px;
-   	border: 1px solid #076dff;
+   	border: 1px solid #e0dcd8;
     text-align: center;
-    color: #fb7600;
+    color: #200edb;
     border-radius: 3px;
 }
 .header .warp input[type="button"]{
-	background: #d4d4d4;
+	background: #e0dcd8;
 	border: 1px solid #c8cace;
 	cursor: pointer;
 }
@@ -87,7 +87,7 @@ html,body{
 	width: 100px;
 	height: 100%;
 	overflow: auto;
-	background: #467ec3;
+	background:#ececec;
 	background-size: 100% 100%;
 }
 .navmenu::-webkit-scrollbar{
@@ -106,10 +106,15 @@ html,body{
 .main_html{
 	height: 100%;
 	overflow: hidden;
-	
+	float: left;
+	width: calc(100% - 200px);
 }
 .main_warp{
-	height: 100%;
+	height: calc(100% - 10px);
 	overflow: auto;
 	padding: 5px;
+	padding-bottom: 40px;
+}
+.main_warp::-webkit-scrollbar{
+	width:0px;
 }
