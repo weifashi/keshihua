@@ -113,6 +113,7 @@ html,body{
 	left: -50px;
 	background: #828282;
 	height: 100%;
+	display: none;
 }
 .main_modules .SelectArea input[type="button"]{
 	background: #e0dcd8;
