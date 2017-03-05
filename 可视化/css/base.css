@@ -77,7 +77,6 @@ html,body{
 	margin-top: 10px;
 }
 
-
 /*===main===*/
 .main{
 	height: calc(100% - 51px);
@@ -104,43 +103,6 @@ html,body{
 	margin-bottom: 1px;
 	text-align: center;
 }
-.navmenu .basic{
-	text-indent: 30px;
-	margin: 10px;
-	margin-left: 8px;
-}
-.basic h1{
-	text-align: center;
-	text-indent: initial;
-	font-size: 16px;
-    background: #1e1e1e;
-    line-height: 35px;
-    color: #da6e6e;
-}
-.basic .title{
-	height: 35px;
-	line-height: 35px;
-	color: #fff;
-	border-top: 1px solid #467EC3;
-	background: #333333;
-	cursor: pointer;
-	overflow: hidden;
-}
-.submenu{
-	display: none;
-	background: #cdcdcd;
-}
-.submenu ul li{
-	line-height: 35px;
-	cursor: pointer;
-	border-bottom: 1px solid #a19f9f;
-}
-.submenu ul li a{
-	display: block;
-}
-.submenu ul li:active{
-	color: red;
-}
 .main_html{
 	height: 100%;
 	overflow: hidden;
@@ -150,31 +112,4 @@ html,body{
 	height: 100%;
 	overflow: auto;
 	padding: 5px;
-}
-
-
-/**/
-.table{
-	width: 800px;
-	margin: auto;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-.table-top{
-	margin-bottom: 10px;
-}
-.table h1{
-	line-height: 45px;
-	font-size: 20px;
-	font-weight: 700;
-}
-.table th{
-	font-size: 18px;
-	font-weight: 700;
-}
-.table td,.table th{
-	font-size: 16px;
-	line-height: 30px;
-	padding-left: 20px;
-	background: #FFFFFF;
 }

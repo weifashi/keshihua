@@ -2,10 +2,7 @@
 //=========头部多选择区===============
 //
 define(['require', '../modules/index.js'], function(require) {
-	var init = function() {
-		SelectArea.init()
-	};
-	return init;
+	return SelectArea.init;
 });
 var SelectArea={
 	init:function  () {

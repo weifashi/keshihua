@@ -3,29 +3,22 @@
  * ========全局样式（字体，按钮，颜色，风格）=================
  * 
  */
-
+/*鼠标经过添加的id 和点击添加的id*/
 #J_border {
 	border: 1px dashed #ff3800;
 }
 [data-xx] {
 	border: 1px dashed #d1d4d1;
 }
+
 /*===字体===*/
-
 .font {}
-
-
 /*===按钮=== */
-
 .btn-w {
 	width: 100%;
 }
-
 .btn-w100 {
 	width: 100px;
 }
-
-
 /*===颜色=== */
-
 .color {}

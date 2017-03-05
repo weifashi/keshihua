@@ -26,10 +26,6 @@ input:focus{outline: none;}/*去掉亮框*/
 .fl {float: left;}
 .fr {float: right;}
 
-
-
-
-
 /*文字排版*/
 .f12{font-size:12px;}
 .f13{font-size:13px;}
@@ -45,7 +41,6 @@ input:focus{outline: none;}/*去掉亮框*/
 .fb{font-weight:bold;}
 .fn{font-weight:normal;}
 .t2{text-indent:2em;}
-
  
 /*宽高*/
 .w10{width:10px;}
@@ -74,7 +69,6 @@ input:focus{outline: none;}/*去掉亮框*/
 .h100{height:100px;}
 .h200{height:200px;}
 .h{height:100%}
-
 
 /*外边距*/
 .m10{margin:10px;}
@@ -109,7 +103,6 @@ input:focus{outline: none;}/*去掉亮框*/
 .mr50{margin-right:50px;}
 .mr100{margin-right:100px;}
 
-
 /*内边距*/
 .p10{padding:10px;}
 .p15{padding:15px;}
@@ -142,10 +135,3 @@ input:focus{outline: none;}/*去掉亮框*/
 .pr30{padding-right:30px;}
 .pr50{padding-right:50px;}
 .pr100{padding-right:100px;}
-
-
-
-
-
-
-

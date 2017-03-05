@@ -6,17 +6,17 @@
 var Class;
 var globa = {
 	init: function() {
-		$(document).bind("selectstart", function() {return false});
+		$(document).bind("selectstart",function() {return false});
 		globa.addDom();
 		$(document).mouseover(function(e) { //鼠标经过虚线
 			globa.mouseover(e);
 		});
-		$('input').bind('input propertychange', function(e) { //监听input
+		$('input').bind('input propertychange', function(e) {//监听input
 			$(".SelectArea").hide();
-			globa.propertychange(e); //实时更新
-			globa.Style(); //保存样式
+			globa.propertychange(e);
+			globa.Style(); 
 		});
-		$("input").keydown(function(event) { //方向键盘
+		$("input").keydown(function(event) { //方向键盘-上下
 			var i = $(this).val();
 			if(event.keyCode == 38) {
 				i++;
@@ -40,7 +40,7 @@ var globa = {
 			};
 		});
 	},
-	propertychange: function(e) {
+	propertychange: function(e) { //实时更新Class的样式
 		if(!Class || Class == ".main_warp") {
 			return false;
 		};
@@ -64,14 +64,14 @@ var globa = {
 			var Cla = Class;
 		} else { var Cla = " "; };
 		var Color = function(Class, id, Style) {
-			function_full(id, function(color) { //唯一功能，返回颜色
+			function_full(id, function(color){
 				$(Class).css(Style, color);
 				globa.Style();
 			},Class);
 		};
-		Color(Cla, $("#J_bjcolor"), "background-color"); //背景颜色
-		Color(Cla, $("#J_fontColor"), "color"); //字体颜色
-		Color(Cla, $("#J_borderColor"), "border-color"); //边框颜色
+		Color(Cla, $("#J_bjcolor"), "background-color"); 
+		Color(Cla, $("#J_fontColor"), "color");
+		Color(Cla, $("#J_borderColor"), "border-color");
 	},
 	Style: function() { //样式保存
 		if(Class && Class != ".main_warp") {
@@ -89,7 +89,7 @@ var globa = {
 			$("[data-xx]").removeAttr("data-xx");
 		};
 	},
-	addDom: function() { //加元素
+	addDom: function() { //添加元素
 		var ks = 0;
 		$(".navmenu li").click(function() {
 			ks++;
