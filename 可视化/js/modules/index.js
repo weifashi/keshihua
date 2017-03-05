@@ -11,7 +11,8 @@ var SelectArea={
 			This = $(e.target);
 			Event =e;
 			var test =common.getObjXy(This.attr('id'));
-			$(".SelectArea").show().css("left",test.right)
+//			$(".SelectArea").show().css("left",test.right)
+			$(".SelectArea").show();
 		});
 		$(".SelectArea button").click(function  (e) {
 			e.stopPropagation();
