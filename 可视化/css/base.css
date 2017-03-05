@@ -1,0 +1,180 @@
+/*
+ * 
+ *============所有页面基本样式=============== 
+ *
+ */
+html,body{
+	height: 100%;
+}
+/*颜色插件*/
+.header .warp .sp-light{
+    margin-right: 5px;
+    padding: 2px;
+}
+.header .warp .sp-preview{
+	margin: 0 !important;
+	border: 0 !important;
+	width: 17px;
+    height: 16px;
+}
+.header .warp .sp-dd{
+	display: none;
+}
+/*-====头部=====*/
+.header{
+	height: 50px;
+	line-height: 50px;
+	overflow: hidden;
+	border-bottom: 1px solid #333333;
+	font-size: 14px;
+	color: #0a0eda;
+	position: relative;
+}
+.header #J-xiazai{
+	position: absolute;
+	top: 0;
+	left: 25px;
+}
+.header .SelectArea{
+	position: absolute;
+	top: 1px;
+	left: 0;
+	background: rgba(253, 253, 253, 0.9);
+	width: 100%;
+	padding: 0 10px;
+	display: none;
+}
+.header .SelectArea button{
+    border: 0;
+    padding: 5px;
+    background: #cad2ba;
+    border-radius: 4px;
+}
+.header .warp {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.header .warp img{
+	float: left;
+	margin-right: 5px;
+}
+.header .warp input{
+    height: 20px;
+    margin-right: 10px;
+   	border: 1px solid #076dff;
+    text-align: center;
+    color: #fb7600;
+    border-radius: 3px;
+}
+.header .warp input[type="button"]{
+	background: #d4d4d4;
+	border: 1px solid #c8cace;
+	cursor: pointer;
+}
+.header .warp span{
+	font-size: 14px;margin-right: 20px;float: right;
+	margin-top: 10px;
+}
+
+
+/*===main===*/
+.main{
+	height: calc(100% - 51px);
+}
+.navmenu{
+	font-size: 14px;
+	float: left;
+	width: 100px;
+	height: 100%;
+	overflow: auto;
+	background: #467ec3;
+	background-size: 100% 100%;
+}
+.navmenu::-webkit-scrollbar{
+	width: 0;
+}
+.navmenu ul{
+	margin: 15px;
+}
+.navmenu ul li{
+	background: red;
+	line-height: 20px;
+	cursor: pointer;
+	margin-bottom: 1px;
+	text-align: center;
+}
+.navmenu .basic{
+	text-indent: 30px;
+	margin: 10px;
+	margin-left: 8px;
+}
+.basic h1{
+	text-align: center;
+	text-indent: initial;
+	font-size: 16px;
+    background: #1e1e1e;
+    line-height: 35px;
+    color: #da6e6e;
+}
+.basic .title{
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	border-top: 1px solid #467EC3;
+	background: #333333;
+	cursor: pointer;
+	overflow: hidden;
+}
+.submenu{
+	display: none;
+	background: #cdcdcd;
+}
+.submenu ul li{
+	line-height: 35px;
+	cursor: pointer;
+	border-bottom: 1px solid #a19f9f;
+}
+.submenu ul li a{
+	display: block;
+}
+.submenu ul li:active{
+	color: red;
+}
+.main_html{
+	height: 100%;
+	overflow: hidden;
+	
+}
+.main_warp{
+	height: 100%;
+	overflow: auto;
+	padding: 5px;
+}
+
+
+/**/
+.table{
+	width: 800px;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.table-top{
+	margin-bottom: 10px;
+}
+.table h1{
+	line-height: 45px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.table th{
+	font-size: 18px;
+	font-weight: 700;
+}
+.table td,.table th{
+	font-size: 16px;
+	line-height: 30px;
+	padding-left: 20px;
+	background: #FFFFFF;
+}
