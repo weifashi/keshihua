@@ -7,7 +7,7 @@ var common = {
 	Trim: function(str, is_global) { //去掉所有空格  common.Trim("2213","g");
 		var result;
 		result = str.replace(/(^\s+)|(\s+$)/g, "");
-		if(is_global.toLowerCase() == "g") {
+		if(is_global&&is_global.toLowerCase() == "g") {
 			result = result.replace(/\s/g, "");
 		}
 		return result;

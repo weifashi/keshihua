@@ -44,11 +44,13 @@ var globa = {
 				globa.Input();
 			};
 		});
-		$("#J_modify-thisText").click(function  () {
-			$("#J_border").text(232);
+		$("#J_modify-thisText").click(function  () {//修改文本
+			var html=$("#J_border *").remove().clone();
+			$("#J_border").text($("#J_thisText").val()); 
+			$("#J_border").append(html);
 		});
 	},
-	propertychange: function(e) { //实时更新Class的样式
+	propertychange: function(e) { //实时更新Class的行间样式
 		if(!Class || Class == ".main_warp") {
 			return false;
 		};
@@ -134,7 +136,6 @@ var globa = {
 			"fontColor": $("#J_border").css("color"),
 			"lineHeight": parseInt($("#J_border").css("line-height")),
 		};
-		$("#J_thisText").val(Json.thisText);
 		$("#J_height").val(Json.height);
 		$("#J_width").val(Json.width);
 		$("#J_bjcolor").next().find(".sp-preview-inner").css("background-color", Json.bjcolor);
@@ -142,6 +143,10 @@ var globa = {
 		$("#J_fontSize").val(Json.fontSize);
 		$("#J_fontColor").next().find(".sp-preview-inner").css("background-color", Json.fontColor);
 		$("#J_lineHeight").val(Json.lineHeight);
+		//获取当前文本
+		var html=$("#J_border *").remove().clone();
+		$("#J_thisText").val(common.Trim($("#J_border").text()));
+		$("#J_border").append(html);
 	},
 	modifyClass: function() { //显示当前class
 		$("#J_thisClass").focus(function() {

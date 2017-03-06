@@ -164,6 +164,7 @@ html,body{
     height: 100%;
     background: #828282;
     display: none;
+    overflow: auto;
 }
 .navmenu_fujia li{
 	cursor: pointer;
@@ -220,4 +221,9 @@ html,body{
 }
 ::-webkit-scrollbar-corner{ 
 	background: #d8d6d6;
+}
+
+/*底部*/
+.footer{
+	height: 4px;background: #f9f2d9;border-top: 1px solid #cecece;
 }
