@@ -93,7 +93,7 @@ var globa = {
 	},
 	addDom: function() { //添加元素
 		var ks = 0;
-		$(".navmenu li").click(function() {
+		$(".navmenu_fujia li").click(function() {
 			ks++;
 			$(this).find(">*").addClass("ksh" + ks + "_top");
 			if($("#J_border").length > 0) {

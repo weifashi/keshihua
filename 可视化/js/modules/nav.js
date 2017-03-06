@@ -13,19 +13,11 @@ var nav={
 				$(this).siblings(".submenu").slideUp(100);
 			}
 		});
-		//保存导航浏览记录到本地
-		$(".submenu li").click(function() {
-			var navIndex = {
-				title: $(this).parents(".basic>div").index(),
-			};
-			if($(this).attr("href") != "javascript:void(0)") {
-				localStorage.navIndex = JSON.stringify(navIndex);
-			};
+		$(".submenu li").click(function  () {
+			$(".navmenu_fujia").show();
+			var html="<ul><li><div>div</div></li></ul>";
+			$(".navmenu_fujia").html(html);
+			globa.addDom();
 		});
-		//默认加载页面
-//		if(localStorage.navIndex) {
-//			var navIndex = JSON.parse(localStorage.navIndex);
-//			$(".basic>div").eq(navIndex.title).find(".submenu").show(0);
-//		};
 	}
 }
