@@ -23,9 +23,12 @@ var common = {
 		str = Style.replace(str, obj + "{" + sty + "}");
 		return str;
 	},
-	strRemove: function(str, isStr) { //删除指定字符串 common.strRemove('12345',"3");  返回1245
-		var str = str;
-		var ttr = str.split(isStr); //数组
+	strRemove: function(calss) { //删除指定字符串 common.strRemove('12345',"3");  返回1245
+		var Style = $("#style").text();
+		var i = $("#style").text().indexOf(calss, 0);
+		var k = $("#style").text().indexOf("}", $("#style").text().indexOf(calss, 0)) + 1; //样式的结尾位置
+		var str = Style.substring(i, k);
+		var ttr = str.split(str); //数组
 		str = ttr.join(''); //字符串
 		return str;
 	},

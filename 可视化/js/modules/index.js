@@ -10,9 +10,14 @@ var SelectArea={
 		$('input[type="text"]').focus(function  (e) {
 			This = $(e.target);
 			Event =e;
-			var test =common.getObjXy(This.attr('id'));
+			if(This.is("#J_thisClass")){
+				return;
+			}
+			if(This.attr('id')){
+				var test =common.getObjXy(This.attr('id'));
+				$(".SelectArea").show();
+			}
 //			$(".SelectArea").show().css("left",test.right)
-			$(".SelectArea").show();
 		});
 		$(".SelectArea button").click(function  (e) {
 			e.stopPropagation();

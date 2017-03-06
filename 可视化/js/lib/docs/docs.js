@@ -26,6 +26,7 @@ function function_full(obj, funn,bgColor2) {
 			};
 		},
 		hide: function(color) {
+			$(this).next().find(".sp-preview-inner").css("background-color",bgColor);
 			if(funn) {
 				funn(bgColor);
 			};

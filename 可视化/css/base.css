@@ -22,8 +22,8 @@ html,body{
 }
 /*-====头部=====*/
 .header{
-	height: 50px;
-	line-height: 50px;
+	height: 40px;
+	line-height: 40px;
 	overflow: hidden;
 	border-bottom: 1px solid #cecece;
 	font-size: 14px;
@@ -78,9 +78,9 @@ html,body{
 	height: 100%;
 }
 .modules_warp{
-	margin: 10px;
+	margin: 5px 10px;
 	width: calc(100% - 20px);
-	height: calc(100% - 20px);
+	height: calc(100% - 10px);
 	overflow: auto;
 }
 .modules_warp ul{
@@ -93,12 +93,21 @@ html,body{
 	font-size: 12px;
 	line-height: 24px;
 }
+.modules_warp h1 input{
+	height: 18px;
+   border: 1px solid #e0dcd8;
+   text-align: center;
+   color: #200edb;
+   border-radius: 3px;
+   text-align: center;
+   width: 100%;
+}
 .modules_warp li input{
 	height: 18px;
-   	border: 1px solid #e0dcd8;
-    text-align: center;
-    color: #200edb;
-    border-radius: 3px;
+   border: 1px solid #e0dcd8;
+   text-align: center;
+   color: #200edb;
+   border-radius: 3px;
 }
 .modules_warp li label{
 	text-align: left;
@@ -114,13 +123,16 @@ html,body{
 	background: #828282;
 	height: 100%;
 	display: none;
+	overflow: auto;
 }
 .main_modules .SelectArea input[type="button"]{
 	background: #e0dcd8;
 	border: 1px solid #c8cace;
 	cursor: pointer;
 	position: relative;
-	
+}
+.main_modules .SelectArea::-webkit-scrollbar{
+	width:0px;
 }
 .modules_warp::-webkit-scrollbar{
 	width:0px;
@@ -139,18 +151,36 @@ html,body{
 	background:#ececec;
 	background-size: 100% 100%;
 }
-.navmenu::-webkit-scrollbar{
-	width: 0;
+.navmenu .basic{
+   margin: 5px;
+   text-align: center;
 }
-.navmenu ul{
-	margin: 15px;
+.basic .title{
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+	border-top: 1px solid #467EC3;
+	background: #333333;
+	cursor: pointer;
+	overflow: hidden;
 }
-.navmenu ul li{
-	background: red;
+.submenu{
+	display: none;
+	background: #cdcdcd;
+}
+.submenu ul li{
 	line-height: 20px;
 	cursor: pointer;
-	margin-bottom: 1px;
-	text-align: center;
+	border-bottom: 1px solid #a19f9f;
+}
+.submenu ul li a{
+	display: block;
+}
+.submenu ul li:active{
+	color: red;
+}
+.navmenu::-webkit-scrollbar{
+	width: 0;
 }
 .main_html{
 	height: 100%;

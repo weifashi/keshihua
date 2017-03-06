@@ -8,13 +8,14 @@ var globa = {
 	init: function() {
 		$(document).bind("selectstart",function() {return false});
 		globa.addDom();
+		globa.modifyClass();
 		$(document).mouseover(function(e) { //鼠标经过虚线
 			globa.mouseover(e);
 		});
 		$('input').bind('input propertychange', function(e) {//监听input
 			$(".SelectArea").hide();
 			globa.propertychange(e);
-			globa.Style(); 
+			globa.Style();
 		});
 		$("input").keydown(function(event) { //方向键盘-上下
 			var i = $(this).val();
@@ -34,6 +35,7 @@ var globa = {
 			if($(e.target).parents(".main_html").length > 0) {
 				$("#J_border").removeAttr("id");
 				$(e.target).attr("id", "J_border");
+				$("#J_thisClass").val($("#J_border").attr("class"));
 				Class = "." + $("#J_border").attr("class");
 				globa.colorInit();
 				globa.Input();
@@ -99,12 +101,14 @@ var globa = {
 				var id = $("#J_border *").last();
 				$("#J_border").removeAttr("id");
 				id.attr("id", "J_border");
+				$("#J_thisClass").val($("#J_border").attr("class"))
 				Class = "." + $("#J_border").attr("class");
 				globa.colorInit();
 				globa.Input();
 			} else {
 				$(".main_warp").append($(this).html());
 				$(".main_warp *").last().attr("id", "J_border");
+				$("#J_thisClass").val($("#J_border").attr("class"))
 				Class = "." + $("#J_border").attr("class");
 				globa.colorInit();
 				globa.Input();
@@ -131,5 +135,14 @@ var globa = {
 		$("#J_fontColor").next().find(".sp-preview-inner").css("background-color", Json.fontColor);
 		$("#J_lineHeight").val(Json.lineHeight);
 	},
+	modifyClass:function  () {
+		$("#J_thisClass").focus(function(){
+			rrr="."+$(this).val();
+		});
+		$("#J_thisClass").blur(function  () {
+			console.log(common.strRemove(rrr))
+			$("#J_border").attr("class",$(this).val())
+		});
+	}
 };
 $(function() { globa.init(); });
