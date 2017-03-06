@@ -11,12 +11,8 @@ var nav = {
 				$(this).siblings(".submenu").slideUp(100);
 			}
 		});
-		$(".J_block").click(function  () { 
-			nav.template("block"); 
-		});
-		$(".J_Academician").click(function  () {
-			nav.template("Academician");
-		});
+		$(".J_block").click(function  () { nav.template("block"); });
+		$(".J_Academician").click(function  () { nav.template("Academician"); });
 	},
 	template:function(id){
 		var html = template(id, { });
