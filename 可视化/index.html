@@ -1,104 +1,156 @@
 ﻿<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>可视化编程</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" type="text/css" href="js/lib/docs/spectrum.css" />
-		<link rel="stylesheet" type="text/css" href="css/master.css" />
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/btn.css" />
-		<script src="js/lib/jquery1.9.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/lib/docs/spectrum.js" type="text/javascript" charset="utf-8"></script>
-	</head>
-	<body>
-		<div class="header">
-			<div class="warp">
-				
-			</div>
-			<a href="javascript:;" id="J-xiazai">下载</a>
-		</div>
-		<div class="main">
-			<div class="navmenu">
-				<div  class="basic">
-					<div>
-						<div class="title j-title">header</div>
-						<div class="submenu">
-							<ul>
-								<li><div>div</div></li>
-								<li><h1>h1</h1></li>
-								<li><p>p</p></li>
-							</ul>
-						</div>
-					</div>
-					<div>
-						<div class="title j-title">main</div>
-						<div class="submenu">
-							<ul>
-								<li><div>div</div></li>
-								<li><h1>h1</h1></li>
-								<li><p>p</p></li>
-							</ul>
-						</div>
-					</div>
-					<div>
-						<div class="title j-title">footer</div>
-						<div class="submenu">
-							<ul>
-								<li><div>div</div></li>
-								<li><h1>h1</h1></li>
-								<li><p>p</p></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="main_html">
-				<div class="main_warp">
-					<style type="text/css" id="style"></style>
-				</div>
-			</div>
-			<div class="main_modules">
-				<div class="modules_warp">
-					<h1><input type="text"  id="J_thisClass"/></h1>
-					<ul>
-						<li><label>高</label><input type="text" id="J_height" class="w35" /></li>
-						<li><label>宽</label><input type="text" id="J_width" class="w35"/></li>
-						<li><label>背景</label><input id="J_bjcolor" class="w35"/></li>
-						<li><label>边框</label><input id="J_borderColor"class="w35"/></li>
-						<li><label>字体</label><input id="J_fontColor" class="w35"/></li>
-						<li><label>字大小</label><input type="text" class="w35" id="J_fontSize"/></li>
-						<li><label>行高</label><input type="text"  class="w35" id="J_lineHeight"/></li>
-						<li><input type="button" value="字样式" class="" id="J_fontSty"/></li>
-						<li><input type="button" value="浮动" class="" /></li>
-						<li><input type="button" value="边框" class="w30"/></li>
-						<li><input type="button" value="外边距" class=""/></li>
-						<li><input type="button" value="内边距"class="" /></li>
-						<li><input type="button" value="溢出" class="w30"/></li>
-					</ul>
-				</div>
-				<div class="SelectArea">
-					<button type="button" id="k100" value="50">50px</button>
-					<button type="button" id="k100" value="100">100px</button>
-					<button type="button" id="k100" value="150">150px</button>
-					<button type="button" id="k100" value="200">200px</button>
-					<button type="button" id="k100" value="250">250px</button>
-					<button type="button" id="k100" value="300">300px</button>
-					<button type="button" id="k100" value="350">350px</button>
-					<button type="button" id="k100" value="400">400px</button>
-					<button type="button" id="k100" value="450">450px</button>
-					<button type="button" id="k100" value="500">500px</button>
-					<button type="button" id="k100" value="550">550px</button>
-					<button type="button" id="k100" value="600">600px</button>
-					<button type="button" id="k100" value="650">650px</button>
-				</div>
-			</div>
-		</div>
-		<div class="" style="height: 10px;background: #f9f2d9;"></div>
-		<script src="js/lib/docs/docs.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
-		<script data-main="js/main.js" src="js/lib/require.js" type="text/javascript" charset="utf-8"></script>
-	</body>
+   <head>
+      <meta charset="utf-8" />
+      <title>可视化编程</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" type="text/css" href="js/lib/docs/spectrum.css" />
+      <link rel="stylesheet" type="text/css" href="css/master.css" />
+      <link rel="stylesheet" type="text/css" href="css/base.css" />
+      <link rel="stylesheet" type="text/css" href="css/btn.css" />
+      <script src="js/lib/jquery1.9.min.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/lib/docs/spectrum.js" type="text/javascript" charset="utf-8"></script>
+      <style type="text/css">
+			@font-face {
+			  font-family: 'iconfont';  /* project id 213979 */
+			  src: url('//at.alicdn.com/t/font_acx88ara7awwb3xr.eot');
+			  src: url('//at.alicdn.com/t/font_acx88ara7awwb3xr.eot?#iefix') format('embedded-opentype'),
+			  url('//at.alicdn.com/t/font_acx88ara7awwb3xr.woff') format('woff'),
+			  url('//at.alicdn.com/t/font_acx88ara7awwb3xr.ttf') format('truetype'),
+			  url('//at.alicdn.com/t/font_acx88ara7awwb3xr.svg#iconfont') format('svg');
+			}
+			.iconfont {
+			  font-family:"iconfont" !important;
+			  font-style:normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+		</style>
+   </head>
+   <body>
+      <div class="header">
+         <div class="warp">
+
+         </div>
+         <a href="javascript:;" id="J-xiazai">下载</a>
+      </div>
+      <div class="main">
+         <div class="navmenu">
+            <div class="navmenu_fujia">
+               <ul>
+                  <li>
+                     <div>div</div>
+                  </li>
+                  <li>
+                     <h1>h1</h1></li>
+                  <li>
+                     <p>p</p>
+                  </li>
+                  <li><b>b</b></li>
+                  <li><i>i</i></li>
+                  <li><em>em</em></li>
+                  <li><dfn>dfn</dfn></li>
+                  <li><u>u</u></li>
+                  <li><ins>ins</ins></li>
+                  <li><strike>strike</strike></li>
+                  <li><sub>sub</sub></li>
+                  <li><sup>sup</sup></li>
+                  <li><s></s></li>
+                  <li><kbd>kbd</kbd></li>
+                  <li><tt>tt</tt></li>
+                  <li><pre>pre</pre></li>
+               </ul>
+            </div>
+            <div class="basic">
+               <div>
+                  <div class="title j-title">添加元素<i class="iconfont">&#xe60f;</i></div>
+                  <div class="submenu">
+                     <ul>
+                        <li>块级元素</li>
+                        <li>行内元素</li>
+                        <li>字体元素</li>
+                        <li>无序列表</li>
+                     </ul>
+                  </div>
+               </div>
+               <div>
+                  <div class="title j-title">main</div>
+                  <div class="submenu">
+                     <ul>
+                        <li>
+                           <div>div</div>
+                        </li>
+                        <li>
+                           <h1>h1</h1></li>
+                        <li>
+                           <p>p</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div>
+                  <div class="title j-title">footer</div>
+                  <div class="submenu">
+                     <ul>
+                        <li>
+                           <div>div</div>
+                        </li>
+                        <li>
+                           <h1>h1</h1></li>
+                        <li>
+                           <p>p</p>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="main_html">
+            <div class="main_warp">
+               <style type="text/css" id="style"></style>
+            </div>
+         </div>
+         <div class="main_modules">
+            <div class="modules_warp">
+               <h1><input type="text"  id="J_thisClass"/></h1>
+               <ul>
+                  <li><label>高</label><input type="text" id="J_height" class="w35" /></li>
+                  <li><label>宽</label><input type="text" id="J_width" class="w35" /></li>
+                  <li><label>背景</label><input id="J_bjcolor" class="w35" /></li>
+                  <li><label>边框</label><input id="J_borderColor" class="w35" /></li>
+                  <li><label>字体</label><input id="J_fontColor" class="w35" /></li>
+                  <li><label>字大小</label><input type="text" class="w35" id="J_fontSize" /></li>
+                  <li><label>行高</label><input type="text" class="w35" id="J_lineHeight" /></li>
+                  <li><input type="button" value="字样式" class="" id="J_fontSty" /></li>
+                  <li><input type="button" value="浮动" class="" /></li>
+                  <li><input type="button" value="边框" class="w30" /></li>
+                  <li><input type="button" value="外边距" class="" /></li>
+                  <li><input type="button" value="内边距" class="" /></li>
+                  <li><input type="button" value="溢出" class="w30" /></li>
+               </ul>
+            </div>
+            <div class="SelectArea">
+               <button type="button" id="k100" value="50">50px</button>
+               <button type="button" id="k100" value="100">100px</button>
+               <button type="button" id="k100" value="150">150px</button>
+               <button type="button" id="k100" value="200">200px</button>
+               <button type="button" id="k100" value="250">250px</button>
+               <button type="button" id="k100" value="300">300px</button>
+               <button type="button" id="k100" value="350">350px</button>
+               <button type="button" id="k100" value="400">400px</button>
+               <button type="button" id="k100" value="450">450px</button>
+               <button type="button" id="k100" value="500">500px</button>
+               <button type="button" id="k100" value="550">550px</button>
+               <button type="button" id="k100" value="600">600px</button>
+               <button type="button" id="k100" value="650">650px</button>
+            </div>
+         </div>
+      </div>
+      <div class="" style="height: 4px;background: #f9f2d9;border-top: 1px solid #cecece;"></div>
+      <script src="js/lib/docs/docs.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+      <script data-main="js/main.js" src="js/lib/require.js" type="text/javascript" charset="utf-8"></script>
+   </body>
 </html>
