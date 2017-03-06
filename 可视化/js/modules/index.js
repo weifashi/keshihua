@@ -7,6 +7,7 @@ define(['require', '../modules/index.js'], function(require) {
 var SelectArea={
 	init:function  () {
 		var This,Event;
+		return;
 		$('input[type="text"]').focus(function  (e) {
 			This = $(e.target);
 			Event =e;
@@ -17,7 +18,6 @@ var SelectArea={
 				var test =common.getObjXy(This.attr('id'));
 				$(".SelectArea").show();
 			}
-//			$(".SelectArea").show().css("left",test.right)
 		});
 		$(".SelectArea button").click(function  (e) {
 			e.stopPropagation();

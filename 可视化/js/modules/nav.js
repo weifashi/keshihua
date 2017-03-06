@@ -14,7 +14,7 @@ var nav = {
 		$(".J_block").click(function  () { nav.template("block"); });
 		$(".J_Academician").click(function  () { nav.template("Academician"); });
 	},
-	template:function(id){
+	template:function(id){//模版
 		var html = template(id, { });
 		$(".navmenu_fujia").html(html).hide().show();
 		globa.addDom();
