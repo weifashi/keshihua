@@ -30,6 +30,7 @@
 		</style>
    </head>
    <body>
+   	<div id="template" style="display: none;"></div>
       <div class="header">
          <div class="warp">
 
@@ -68,8 +69,8 @@
                   <div class="title j-title">添加元素<i class="iconfont">&#xe60f;</i></div>
                   <div class="submenu">
                      <ul>
-                        <li>块级元素</li>
-                        <li>行内元素</li>
+                        <li class="J_block">块级元素</li>
+                        <li class="J_Academician">行内元素</li>
                         <li>字体元素</li>
                         <li>无序列表</li>
                      </ul>
@@ -153,5 +154,6 @@
       <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
       <script src="js/global.js" type="text/javascript" charset="utf-8"></script>
       <script data-main="js/main.js" src="js/lib/require.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript">$("#template").load("template/index.html");</script>
    </body>
 </html>
