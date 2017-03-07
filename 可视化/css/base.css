@@ -55,6 +55,7 @@ html,body{
     margin-left: 3px;
     padding: 1px;
     line-height: 16px;
+   font-size: 12px;
 }
 .header .this_text span{
 	float: left;
